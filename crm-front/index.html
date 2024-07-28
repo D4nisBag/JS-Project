@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/choices.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js@9.0.1/public/assets/styles/base.min.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CRM</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header__container flex">
+           <a href="#" class="header__logo-link">
+                <svg class="logotip" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="25" cy="25" r="25" fill="#9873FF"/>
+                    <path d="M17.2617 29.082C17.2617 30.0898 16.9102 30.8574 16.207 31.3848C15.5098 31.9121 14.4639 32.1758 13.0693 32.1758C12.3545 32.1758 11.7451 32.126 11.2412 32.0264C10.7373 31.9326 10.2656 31.792 9.82617 31.6045V29.3896C10.3242 29.624 10.8838 29.8203 11.5049 29.9785C12.1318 30.1367 12.6826 30.2158 13.1572 30.2158C14.1299 30.2158 14.6162 29.9346 14.6162 29.3721C14.6162 29.1611 14.5518 28.9912 14.4229 28.8623C14.2939 28.7275 14.0713 28.5781 13.7549 28.4141C13.4385 28.2441 13.0166 28.0479 12.4893 27.8252C11.7334 27.5088 11.1768 27.2158 10.8193 26.9463C10.4678 26.6768 10.21 26.3691 10.0459 26.0234C9.8877 25.6719 9.80859 25.2412 9.80859 24.7314C9.80859 23.8584 10.1455 23.1846 10.8193 22.71C11.499 22.2295 12.46 21.9893 13.7021 21.9893C14.8857 21.9893 16.0371 22.2471 17.1562 22.7627L16.3477 24.6963C15.8555 24.4854 15.3955 24.3125 14.9678 24.1777C14.54 24.043 14.1035 23.9756 13.6582 23.9756C12.8672 23.9756 12.4717 24.1895 12.4717 24.6172C12.4717 24.8574 12.5977 25.0654 12.8496 25.2412C13.1074 25.417 13.667 25.6777 14.5283 26.0234C15.2959 26.334 15.8584 26.624 16.2158 26.8936C16.5732 27.1631 16.8369 27.4736 17.0068 27.8252C17.1768 28.1768 17.2617 28.5957 17.2617 29.082ZM21.9287 26.6562L23.0977 25.1621L25.8486 22.1738H28.8721L24.9697 26.4365L29.1094 32H26.0156L23.1855 28.0186L22.0342 28.9414V32H19.3535V18.3242H22.0342V24.4238L21.8936 26.6562H21.9287ZM35.9824 21.9893C37.1426 21.9893 38.0508 22.4434 38.707 23.3516C39.3633 24.2539 39.6914 25.4932 39.6914 27.0693C39.6914 28.6924 39.3516 29.9492 38.6719 30.8398C37.998 31.7305 37.0781 32.1758 35.9121 32.1758C34.7578 32.1758 33.8525 31.7568 33.1963 30.9189H33.0117L32.5635 32H30.5156V18.3242H33.1963V21.5059C33.1963 21.9102 33.1611 22.5576 33.0908 23.4482H33.1963C33.8232 22.4756 34.752 21.9893 35.9824 21.9893ZM35.1211 24.1338C34.459 24.1338 33.9756 24.3389 33.6709 24.749C33.3662 25.1533 33.208 25.8242 33.1963 26.7617V27.0518C33.1963 28.1064 33.3516 28.8623 33.6621 29.3193C33.9785 29.7764 34.4766 30.0049 35.1562 30.0049C35.707 30.0049 36.1436 29.7529 36.4658 29.249C36.7939 28.7393 36.958 28.001 36.958 27.0342C36.958 26.0674 36.7939 25.3438 36.4658 24.8633C36.1377 24.377 35.6895 24.1338 35.1211 24.1338ZM41.5283 30.7432C41.5283 30.251 41.6602 29.8789 41.9238 29.627C42.1875 29.375 42.5713 29.249 43.0752 29.249C43.5615 29.249 43.9365 29.3779 44.2002 29.6357C44.4697 29.8936 44.6045 30.2627 44.6045 30.7432C44.6045 31.2061 44.4697 31.5723 44.2002 31.8418C43.9307 32.1055 43.5557 32.2373 43.0752 32.2373C42.583 32.2373 42.2021 32.1084 41.9326 31.8506C41.6631 31.5869 41.5283 31.2178 41.5283 30.7432Z" fill="white"/>
+                </svg>
+                <svg class="small-logo" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="12" fill="#9873FF"/>
+                    <path d="M8.28545 13.8394C8.28545 14.3231 8.1167 14.6916 7.7792 14.9447C7.44451 15.1978 6.94248 15.3244 6.27311 15.3244C5.92998 15.3244 5.63748 15.3005 5.39561 15.2526C5.15373 15.2076 4.92732 15.1401 4.71639 15.0501V13.987C4.95545 14.0995 5.22404 14.1937 5.52217 14.2697C5.82311 14.3456 6.08748 14.3836 6.31529 14.3836C6.78217 14.3836 7.01561 14.2486 7.01561 13.9786C7.01561 13.8773 6.98467 13.7958 6.92279 13.7339C6.86092 13.6692 6.75404 13.5975 6.60217 13.5187C6.45029 13.4372 6.24779 13.343 5.99467 13.2361C5.63186 13.0842 5.36467 12.9436 5.19311 12.8142C5.02436 12.6848 4.90061 12.5372 4.82186 12.3712C4.74592 12.2025 4.70795 11.9958 4.70795 11.7511C4.70795 11.332 4.86967 11.0086 5.19311 10.7808C5.51936 10.5501 5.98061 10.4348 6.57686 10.4348C7.14498 10.4348 7.69764 10.5586 8.23482 10.8061L7.8467 11.7342C7.61045 11.633 7.38967 11.55 7.18436 11.4853C6.97904 11.4206 6.76951 11.3883 6.55576 11.3883C6.17607 11.3883 5.98623 11.4909 5.98623 11.6962C5.98623 11.8116 6.0467 11.9114 6.16764 11.9958C6.29139 12.0801 6.55998 12.2053 6.97342 12.3712C7.34186 12.5203 7.61186 12.6595 7.78342 12.7889C7.95498 12.9183 8.08154 13.0673 8.16311 13.2361C8.24467 13.4048 8.28545 13.6059 8.28545 13.8394ZM10.5256 12.675L11.0867 11.9578L12.4072 10.5234H13.8584L11.9853 12.5695L13.9723 15.24H12.4873L11.1289 13.3289L10.5762 13.7719V15.24H9.28951V8.67562H10.5762V11.6034L10.5087 12.675H10.5256ZM17.2714 10.4348C17.8283 10.4348 18.2642 10.6528 18.5792 11.0887C18.8942 11.5219 19.0517 12.1167 19.0517 12.8733C19.0517 13.6523 18.8886 14.2556 18.5623 14.6831C18.2389 15.1106 17.7973 15.3244 17.2376 15.3244C16.6836 15.3244 16.249 15.1233 15.934 14.7211H15.8454L15.6303 15.24H14.6473V8.67562H15.934V10.2028C15.934 10.3969 15.9172 10.7076 15.8834 11.1351H15.934C16.235 10.6683 16.6808 10.4348 17.2714 10.4348ZM16.8579 11.4642C16.5401 11.4642 16.3081 11.5626 16.1619 11.7595C16.0156 11.9536 15.9397 12.2756 15.934 12.7256V12.8648C15.934 13.3711 16.0086 13.7339 16.1576 13.9533C16.3095 14.1726 16.5486 14.2823 16.8748 14.2823C17.1392 14.2823 17.3487 14.1614 17.5034 13.9195C17.6609 13.6748 17.7397 13.3205 17.7397 12.8564C17.7397 12.3923 17.6609 12.045 17.5034 11.8144C17.3459 11.5809 17.1308 11.4642 16.8579 11.4642ZM19.9334 14.6367C19.9334 14.4005 19.9967 14.2219 20.1233 14.1009C20.2498 13.98 20.434 13.9195 20.6759 13.9195C20.9094 13.9195 21.0894 13.9814 21.2159 14.1051C21.3453 14.2289 21.41 14.4061 21.41 14.6367C21.41 14.8589 21.3453 15.0347 21.2159 15.1641C21.0865 15.2906 20.9065 15.3539 20.6759 15.3539C20.4397 15.3539 20.2569 15.292 20.1275 15.1683C19.9981 15.0417 19.9334 14.8645 19.9334 14.6367Z" fill="white"/>
+                </svg>
+           </a>
+            <input type="text" class="header__input" placeholder="Введите запрос">
+        </div>
+        
+    </div>
+    <div class="main">
+        <div class="container flex">
+            <h1 class="main__title-1">Клиенты</h1>
+            <div class="main__table flex">
+                <div class="main__thead">
+                    <div class="main__tr flex">
+                        <div class="main__head-td id__head col-1">
+                            <div class="main__head-container id__head-container">
+                              <span>ID<svg class="main__arrow id-arrow" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                                </svg>
+                            </span>
+                            </div>                          
+                        </div>
+                        <div class="main__head-td fio_head col-2">
+                                <div class="main__head-container fio__head-container">
+                                   <span class="wrap">
+                                    Фамилия Имя Отчество 
+                                <span class="main__alf">
+                                    <svg class="main__arrow fio-arrow" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                                        </svg>
+                                          А-Я
+                                </span>  
+                                   </span>
+                                </div>  
+                            </div>
+                        <div class="main__head-td create__head col-3">
+                            <div class="main__head-container create__head-container flex">
+                                <span class="wrap">
+                                    Дата и время создания 
+                                    <span>
+                                        <svg class="main__arrow create-arrow" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                                            </svg>
+                                    </span>
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <div class="main__head-td lastchange__head col-4">
+                            <div class="main__head-container lastchange__head-container flex">
+                                <span class="wrap">
+                                    Последние изменения <svg class="main__arrow lastchange-arrow" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 4L7.295 3.295L4.5 6.085L4.5 0L3.5 0L3.5 6.085L0.71 3.29L0 4L4 8L8 4Z" fill="#9873FF"/>
+                                        </svg>
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <div class="main__head-td contacts__head col-5">
+                            <div class="main__head-container contacts__head-container">
+                               Контакты
+                            </div>
+                                
+                        </div>
+                        <div class="main__head-td act__head col-6">
+                            <div class="main__head-container act__head-container">
+                               Действия
+                            </div>                         
+                        </div>
+                    </div>
+                </div>
+                <div class="main__tbody">
+                    <div class="main__loading-container disabled">
+                        <svg class="main__spinner spin" width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4.00025 40.0005C4.00025 59.8825 20.1182 76.0005 40.0002 76.0005C59.8822 76.0005 76.0002 59.8825 76.0002 40.0005C76.0002 20.1185 59.8823 4.00049 40.0003 4.00049C35.3513 4.00048 30.9082 4.88148 26.8282 6.48648" stroke="#9873FF" stroke-width="8" stroke-miterlimit="10" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-container flex">
+            <button class="main__add-new flex">
+                <svg class="add-new" width="23" height="16" viewBox="0 0 23 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.5 8C16.71 8 18.5 6.21 18.5 4C18.5 1.79 16.71 0 14.5 0C12.29 0 10.5 1.79 10.5 4C10.5 6.21 12.29 8 14.5 8ZM5.5 6V3H3.5V6H0.5V8H3.5V11H5.5V8H8.5V6H5.5ZM14.5 10C11.83 10 6.5 11.34 6.5 14V16H22.5V14C22.5 11.34 17.17 10 14.5 10Z" fill="#9873FF"/>
+                </svg>
+                <span>
+                    Добавить клиента
+                </span>                    
+            </button>
+        </div>
+    </div>
+    <div class="footer">
+    </div>
+    <div class="delete-client-confirm disabled">
+        <div class="delete-confirm-container flex">
+            <div class="delete-confirm-content flex">
+                <div class="delete-confirm-upper flex">
+                    <h2 class="delete-confirm__title-2">
+                        Удалить клиента
+                    </h2>
+                    <button class="btn close-btn delete-confirm__close">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2333 1.73333L15.2666 0.766664L8.49991 7.53336L1.73324 0.766696L0.766576 1.73336L7.53324 8.50003L0.766603 15.2667L1.73327 16.2333L8.49991 9.46669L15.2666 16.2334L16.2332 15.2667L9.46657 8.50003L16.2333 1.73333Z" fill="#B0B0B0"/>
+                        </svg>                      
+                    </button>
+                </div>
+                <div class="delete-confirm__par">
+                    Вы действительно хотите удалить данного клиента?
+                </div>
+                <button class="delete-confirm__confirm-btn btn">
+                    Удалить
+                </button>
+                <button class="btn delete-confirm__cancel-btn">
+                    Отмена
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="create-client client-modal disabled">
+        <div class="client-modal-container flex">
+            <div class="client-modal-to-close">
+                
+            </div>
+            <div class="client-modal-new-client disabled">
+                <div class="client-modal__block-layer disabled">
+                </div>
+                <div class="client-modal__upper flex">
+                    <h2 class="client-modal__title-2">
+                        Новый клиент
+                    </h2>
+                    <button class="btn client-modal__close close-btn">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2333 1.73333L15.2666 0.766664L8.49991 7.53336L1.73324 0.766696L0.766576 1.73336L7.53324 8.50003L0.766603 15.2667L1.73327 16.2333L8.49991 9.46669L15.2666 16.2334L16.2332 15.2667L9.46657 8.50003L16.2333 1.73333Z" fill="#B0B0B0"/>
+                        </svg>                      
+                    </button>
+                </div>
+                <form class="client-modal__form" action="" method="post">
+                    <div class="client-modal__input-container">
+                        <p class="client-modal__placeholder client-modal__surname-placeholder">
+                            Фамилия<span class="client-modal__pink">*</span>
+                        </p>
+                        <input class="client-modal__input client-modal__surname-input" type="text" name="surname">
+                    </div>
+                    <div class="client-modal__input-container">
+                        <p class="client-modal__placeholder client-modal__name-placeholder">
+                            Имя<span class="client-modal__pink">*</span>
+                        </p>
+                        <input class="client-modal__input client-modal__name-input" type="text" name="name">
+                    </div>
+                    <div class="client-modal__input-container">
+                        <p class="client-modal__placeholder client-modal__lastname-placeholder">
+                            Отчество
+                        </p>
+                        <input class="client-modal__input client-modal__lastname-input" type="text" name="lastname">
+                    </div>
+                </form>
+                <div class="client-modal__fields-container flex">
+                    <button class="add-contact btn flex">
+                        <svg class="client-modal__plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.99998 3.66683C6.63331 3.66683 6.33331 3.96683 6.33331 4.3335V6.3335H4.33331C3.96665 6.3335 3.66665 6.6335 3.66665 7.00016C3.66665 7.36683 3.96665 7.66683 4.33331 7.66683H6.33331V9.66683C6.33331 10.0335 6.63331 10.3335 6.99998 10.3335C7.36665 10.3335 7.66665 10.0335 7.66665 9.66683V7.66683H9.66665C10.0333 7.66683 10.3333 7.36683 10.3333 7.00016C10.3333 6.6335 10.0333 6.3335 9.66665 6.3335H7.66665V4.3335C7.66665 3.96683 7.36665 3.66683 6.99998 3.66683ZM6.99998 0.333496C3.31998 0.333496 0.333313 3.32016 0.333313 7.00016C0.333313 10.6802 3.31998 13.6668 6.99998 13.6668C10.68 13.6668 13.6666 10.6802 13.6666 7.00016C13.6666 3.32016 10.68 0.333496 6.99998 0.333496ZM6.99998 12.3335C4.05998 12.3335 1.66665 9.94016 1.66665 7.00016C1.66665 4.06016 4.05998 1.66683 6.99998 1.66683C9.93998 1.66683 12.3333 4.06016 12.3333 7.00016C12.3333 9.94016 9.93998 12.3335 6.99998 12.3335Z" fill="#9873FF"/>
+                        </svg>
+                        <span class="client-modal__span">Добавить контакт</span>
+                    </button>
+                </div>
+                <div class="client-modal__lower flex">
+                    <p class="client-create-modal__alert disabled">
+                        
+                    </p>
+                    <button class="btn client-modal__save">
+                        Сохранить
+                    </button>
+                    <button class="btn client-modal__cancel">
+                        Отмена
+                    </button>
+                </div>
+            </div>
+            <div class="client-modal-change-client disabled">
+                <div class="client-modal-change__block-layer disabled">
+                </div>
+                <div class="client-modal__upper flex">
+                    <div class="client-modal-change__upper flex">
+                        <h2 class="client-modal__change-title-2">
+                            Изменить данные
+                        </h2>
+                        <p class="client-modal-change__id"> 
+                        </p>
+                    </div>
+                    <button class="btn client-modal-change__close close-btn">
+                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2333 1.73333L15.2666 0.766664L8.49991 7.53336L1.73324 0.766696L0.766576 1.73336L7.53324 8.50003L0.766603 15.2667L1.73327 16.2333L8.49991 9.46669L15.2666 16.2334L16.2332 15.2667L9.46657 8.50003L16.2333 1.73333Z" fill="#B0B0B0"/>
+                        </svg>                      
+                    </button>
+                </div>
+                <form class="client-modal__form" action="" method="post">
+                    <div class="client-modal__input-container">
+                        <p class="client-modal__placeholder client-change-modal__surname-placeholder">
+                            Фамилия<span class="client-modal__pink">*</span>
+                        </p>
+                        <input class="client-modal__input client-change-modal__surname-input" type="text" name="surname">
+                    </div>
+                    <div class="client-modal__input-container">
+                        <p class="client-modal__placeholder client-change-modal__name-placeholder">
+                            Имя<span class="client-modal__pink">*</span>
+                        </p>
+                        <input class="client-modal__input client-change-modal__name-input" type="text" name="name">
+                    </div>
+                    <div class="client-modal__input-container">
+                        <p class="client-modal__placeholder client-change-modal__lastname-placeholder">
+                            Отчество
+                        </p>
+                        <input class="client-modal__input client-change-modal__lastname-input" type="text" name="lastname">
+                    </div>
+                </form>
+                <div class="client-modal__change-fields-container flex">
+                    <button class="change-add-contact btn flex">
+                        <svg class="client-modal__plus-svg" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.99998 3.66683C6.63331 3.66683 6.33331 3.96683 6.33331 4.3335V6.3335H4.33331C3.96665 6.3335 3.66665 6.6335 3.66665 7.00016C3.66665 7.36683 3.96665 7.66683 4.33331 7.66683H6.33331V9.66683C6.33331 10.0335 6.63331 10.3335 6.99998 10.3335C7.36665 10.3335 7.66665 10.0335 7.66665 9.66683V7.66683H9.66665C10.0333 7.66683 10.3333 7.36683 10.3333 7.00016C10.3333 6.6335 10.0333 6.3335 9.66665 6.3335H7.66665V4.3335C7.66665 3.96683 7.36665 3.66683 6.99998 3.66683ZM6.99998 0.333496C3.31998 0.333496 0.333313 3.32016 0.333313 7.00016C0.333313 10.6802 3.31998 13.6668 6.99998 13.6668C10.68 13.6668 13.6666 10.6802 13.6666 7.00016C13.6666 3.32016 10.68 0.333496 6.99998 0.333496ZM6.99998 12.3335C4.05998 12.3335 1.66665 9.94016 1.66665 7.00016C1.66665 4.06016 4.05998 1.66683 6.99998 1.66683C9.93998 1.66683 12.3333 4.06016 12.3333 7.00016C12.3333 9.94016 9.93998 12.3335 6.99998 12.3335Z" fill="#9873FF"/>
+                        </svg>
+                        <span class="client-modal__span">Добавить контакт</span>
+                    </button>
+                </div>
+                <div class="client-modal__lower flex">
+                    <p class="client-change-modal__alert disabled">
+                        
+                    </p>
+                    <button class="btn client-modal__change-btn">
+                        Сохранить
+                    </button>
+                    <button class="btn client-modal-change__cancel">
+                        Удалить клиента
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="change-client client-modal disabled">
+        <div class="client-modal-container flex">
+            <div class="client-modal-to-close close-btn">
+                
+            </div>
+            
+        </div>
+    </div>
+    <script defer src="js/index.js"></script>
+</body>
+</html>
