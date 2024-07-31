@@ -1,3 +1,9 @@
+Демонстрация интерфейса:
+![image](https://github.com/user-attachments/assets/e6995f12-e3f9-4342-b121-f9c9449ceeb4)
+![image](https://github.com/user-attachments/assets/3ec8c4ab-f7ba-4148-88e5-5fc2458c37d9)
+![image](https://github.com/user-attachments/assets/c4a68ae0-4954-4ff7-9288-43c7ae3e3a09)
+
+
 Файлы css, js, шрифты, изображения расположены в папке js-front, основной js-код расположен в файле index.js, файл client.html содержит страницу с карточкой клиента.
 
 Для запуска необходимо для начала перейти в папку crm-backend, после чего запустить сервер командой node index, после чего можно будет запустить клиент, открыв файл index.html
